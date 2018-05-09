@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+  分类映射文件
+  date: 2018-05-05 21:45:49
+  @author Liuweiyao
+  @version 1.0
+-->
+<mapper namespace="com.talelife.edu.engdict.mapper.CategoryMapper">
+	<!-- 分类对象映射 -->
+	<resultMap id="categoryMap" type="com.talelife.edu.engdict.model.Category">
+			<!-- ID -->
+				<id property="id" column="id" javaType="Long" />
+					<!-- 上级ID -->
+				<result property="pid" column="pid" javaType="Long" />
+					<!-- 类别名称 -->
+				<result property="categoryName" column="category_name" javaType="String" />
+					<!-- 序号 -->
+				<result property="sortNo" column="sort_no" javaType="Integer" />
+					<!-- 删除状态(是:1,否0) -->
+				<result property="deleteFlag" column="delete_flag" javaType="Integer" />
+					<!-- 创建时间,默认当前时间 -->
+				<result property="createTime" column="create_time" javaType="Date" />
+					<!-- 修改时间,默认当前时间 -->
+				<result property="updateTime" column="update_time" javaType="Date" />
+				</resultMap>
+	
+	<sql id="columns">
+		  `id`
+	  	  ,`pid`
+	  	  ,`category_name`
+	  	  ,`sort_no`
+	  	  ,`delete_flag`
+	  	  ,`create_time`
+	  	  ,`update_time`
+	  </sql>
+	
+	<!-- 新增分类 -->
+	<insert id="add" parameterType="com.talelife.edu.engdict.model.Category" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO `t_category` (
+				`pid`
+				,`category_name`
+				,`sort_no`
+				,`delete_flag`
+				,`create_time`
+				,`update_time`
+		)
+		VALUES (
+				#{pid}
+				,#{categoryName}
+				,#{sortNo}
+				,#{deleteFlag}
+				,#{createTime}
+				,#{updateTime}
+		)
+	</insert>
+	
+	<!-- 删除分类 -->
+	<delete id="delete">
+		DELETE FROM `t_category` WHERE `id`=#{id}		
+	</delete>
+	
+	<!-- 修改分类 -->
+	<update id="update" parameterType="com.talelife.edu.engdict.model.Category">
+		UPDATE `t_category`
+		<set>
+			<if test="pid != null">`pid`=#{pid},</if>
+			<if test="categoryName != null">`category_name`=#{categoryName},</if>
+			<if test="sortNo != null">`sort_no`=#{sortNo},</if>
+			<if test="deleteFlag != null">`delete_flag`=#{deleteFlag},</if>
+			<if test="createTime != null">`create_time`=#{createTime},</if>
+			<if test="updateTime != null">`update_time`=#{updateTime},</if>
+		</set>
+		WHERE `id`=#{id}	
+	</update>
+	
+	<!-- 根据主键查询分类 -->
+	<select id="findByPK" resultMap="categoryMap">
+	SELECT
+	  <include refid="columns"/>
+	FROM `t_category`
+	  WHERE `id`=#{id}	
+	</select>
+	
+	<!-- 分类列表查询 -->
+	<select id="findList" resultMap="categoryMap">
+    SELECT
+	  <include refid="columns"/>
+  FROM `t_category`
+	<where>
+			<if test="pid != null">AND `pid`=#{pid}</if>
+			<if test="categoryName != null">AND `category_name`=#{categoryName}</if>
+			<if test="sortNo != null">AND `sort_no`=#{sortNo}</if>
+			<if test="deleteFlag != null">AND `delete_flag`=#{deleteFlag}</if>
+			<if test="createTime != null">AND `create_time`=#{createTime}</if>
+			<if test="updateTime != null">AND `update_time`=#{updateTime}</if>
+		</where>
+	</select>
+	
+	<!-- 分类查询全部 -->
+	<select id="findAll" resultMap="categoryMap">
+    SELECT
+	  <include refid="columns"/>
+  FROM `t_category`
+	</select>
+</mapper>

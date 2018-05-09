@@ -1,0 +1,1381 @@
+﻿[{
+    "id": "1",
+    "categoryName": "项目范围规划",
+    "sortNo": 8,
+    "Start": "2007-01-01T00:00:00",
+    "createTime": "2007-01-10T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "2",
+    "categoryName": "确定项目范围",
+    "sortNo": 1,
+    "Start": "2007-01-01T00:00:00",
+    "createTime": "2007-01-01T23:23:59",
+    "PercentComplete": 30,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": "1"
+},
+{
+    "id": "3",
+    "categoryName": "获得项目所需资金",
+    "sortNo": 2,
+    "Start": "2007-01-02T00:00:00",
+    "createTime": "2007-01-03T23:23:59",
+    "PercentComplete": 60,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "2"
+    }],
+    "pid": "1"
+},
+{
+    "id": "4",
+    "categoryName": "定义预备资源",
+    "sortNo": 2,
+    "Start": "2007-01-04T00:00:00",
+    "createTime": "2007-01-05T23:23:59",
+    "PercentComplete": 40,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "3"
+    }],
+    "pid": "1"
+},
+{
+    "id": "5",
+    "categoryName": "获得核心资源",
+    "sortNo": 2,
+    "Start": "2007-01-08T00:00:00",
+    "createTime": "2007-01-09T23:23:59",
+    "PercentComplete": 90,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "4"
+    }],
+    "pid": "1"
+},
+{
+    "id": "6",
+    "categoryName": "完成项目范围规划",
+    "sortNo": 0,
+    "Start": "2007-01-10T00:00:00",
+    "createTime": "2007-01-10T00:00:00",
+    "PercentComplete": 10,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "5"
+    }],
+    "pid": "1"
+},
+{
+    "id": "7",
+    "categoryName": "分析/软件需求",
+    "sortNo": 20,
+    "Start": "2007-01-11T00:00:00",
+    "createTime": "2007-02-07T00:00:00",
+    "PercentComplete": 40,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "8",
+    "categoryName": "行为需求分析",
+    "sortNo": 6,
+    "Start": "2007-01-11T00:00:00",
+    "createTime": "2007-01-18T23:23:59",
+    "PercentComplete": 50,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "6"
+    }],
+    "pid": "7"
+},
+{
+    "id": "9",
+    "categoryName": "起草初步的软件规范",
+    "sortNo": 4,
+    "Start": "2007-01-19T00:00:00",
+    "createTime": "2007-01-24T23:23:59",
+    "PercentComplete": 70,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "8"
+    }],
+    "pid": "7"
+},
+{
+    "id": "10",
+    "categoryName": "制定初步预算",
+    "sortNo": 3,
+    "Start": "2007-01-25T00:00:00",
+    "createTime": "2007-01-29T23:23:59",
+    "PercentComplete": 30,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "9"
+    }],
+    "pid": "7"
+},
+{
+    "id": "11",
+    "categoryName": "工作组共同审阅软件规范/预算",
+    "sortNo": 1,
+    "Start": "2007-01-30T00:00:00",
+    "createTime": "2007-01-30T23:23:59",
+    "PercentComplete": 20,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "10"
+    }],
+    "pid": "7"
+},
+{
+    "id": "12",
+    "categoryName": "根据反馈修改软件规范",
+    "sortNo": 1,
+    "Start": "2007-01-31T00:00:00",
+    "createTime": "2007-01-31T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "11"
+    }],
+    "pid": "7"
+},
+{
+    "id": "13",
+    "categoryName": "制定交付期限",
+    "sortNo": 1,
+    "Start": "2007-02-01T00:00:00",
+    "createTime": "2007-02-01T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "12"
+    }],
+    "pid": "7"
+},
+{
+    "id": "14",
+    "categoryName": "获得开展后续工作的批准(概念、期限和预算)",
+    "sortNo": 1,
+    "Start": "2007-02-02T00:00:00",
+    "createTime": "2007-02-02T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "13"
+    }],
+    "pid": "7"
+},
+{
+    "id": "15",
+    "categoryName": "获得所需资源",
+    "sortNo": 2,
+    "Start": "2007-02-05T00:00:00",
+    "createTime": "2007-02-06T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "14"
+    }],
+    "pid": "7"
+},
+{
+    "id": "16",
+    "categoryName": "完成分析工作",
+    "sortNo": 0,
+    "Start": "2007-02-07T00:00:00",
+    "createTime": "2007-02-07T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "15"
+    }],
+    "pid": "7"
+},
+{
+    "id": "17",
+    "categoryName": "设计",
+    "sortNo": 21,
+    "Start": "2007-02-08T00:00:00",
+    "createTime": "2007-03-08T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "18",
+    "categoryName": "审阅初步的软件规范",
+    "sortNo": 3,
+    "Start": "2007-02-08T00:00:00",
+    "createTime": "2007-02-12T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "16"
+    }],
+    "pid": "17"
+},
+{
+    "id": "19",
+    "categoryName": "制定功能规范",
+    "sortNo": 6,
+    "Start": "2007-02-13T00:00:00",
+    "createTime": "2007-02-20T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "18"
+    }],
+    "pid": "17"
+},
+{
+    "id": "20",
+    "categoryName": "根据功能规范开发原型",
+    "sortNo": 5,
+    "Start": "2007-02-21T00:00:00",
+    "createTime": "2007-02-27T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "19"
+    }],
+    "pid": "17"
+},
+{
+    "id": "21",
+    "categoryName": "审阅功能规范",
+    "sortNo": 3,
+    "Start": "2007-02-28T00:00:00",
+    "createTime": "2007-03-02T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "20"
+    }],
+    "pid": "17"
+},
+{
+    "id": "22",
+    "categoryName": "根据反馈修改功能规范",
+    "sortNo": 2,
+    "Start": "2007-03-05T00:00:00",
+    "createTime": "2007-03-06T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "21"
+    }],
+    "pid": "17"
+},
+{
+    "id": "23",
+    "categoryName": "获得开展后续工作的批准",
+    "sortNo": 1,
+    "Start": "2007-03-07T00:00:00",
+    "createTime": "2007-03-07T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "22"
+    }],
+    "pid": "17"
+},
+{
+    "id": "24",
+    "categoryName": "完成设计工作",
+    "sortNo": 0,
+    "Start": "2007-03-08T00:00:00",
+    "createTime": "2007-03-08T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "23"
+    }],
+    "pid": "17"
+},
+{
+    "id": "25",
+    "categoryName": "开发",
+    "sortNo": 35,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-04-26T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "26",
+    "categoryName": "审阅功能规范",
+    "sortNo": 1,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-09T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "25"
+},
+{
+    "id": "27",
+    "categoryName": "确定模块化/分层设计参数",
+    "sortNo": 1,
+    "Start": "2007-03-12T00:00:00",
+    "createTime": "2007-03-12T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "26"
+    }],
+    "pid": "25"
+},
+{
+    "id": "28",
+    "categoryName": "分派任务给开发人员",
+    "sortNo": 1,
+    "Start": "2007-03-13T00:00:00",
+    "createTime": "2007-03-13T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "27"
+    }],
+    "pid": "25"
+},
+{
+    "id": "29",
+    "categoryName": "编写代码",
+    "sortNo": 15,
+    "Start": "2007-03-14T00:00:00",
+    "createTime": "2007-04-03T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "28"
+    }],
+    "pid": "25"
+},
+{
+    "id": "30",
+    "categoryName": "开发人员测试(初步调试)",
+    "sortNo": 16,
+    "Start": "2007-04-04T00:00:00",
+    "createTime": "2007-04-25T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "29"
+    }],
+    "pid": "25"
+},
+{
+    "id": "31",
+    "categoryName": "完成开发工作",
+    "sortNo": 0,
+    "Start": "2007-04-26T00:00:00",
+    "createTime": "2007-04-26T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "30"
+    }],
+    "pid": "25"
+},
+{
+    "id": "32",
+    "categoryName": "测试",
+    "sortNo": 73,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-06-19T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "33",
+    "categoryName": "根据产品规范制定单元测试计划",
+    "sortNo": 4,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-14T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "32"
+},
+{
+    "id": "34",
+    "categoryName": "根据产品规范制定整体测试计划",
+    "sortNo": 4,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-14T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "32"
+},
+{
+    "id": "35",
+    "categoryName": "单元测试",
+    "sortNo": 21,
+    "Start": "2007-04-27T00:00:00",
+    "createTime": "2007-05-25T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": "32"
+},
+{
+    "id": "36",
+    "categoryName": "审阅模块化代码",
+    "sortNo": 6,
+    "Start": "2007-04-27T00:00:00",
+    "createTime": "2007-05-04T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "33"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "31"
+    }],
+    "pid": "35"
+},
+{
+    "id": "37",
+    "categoryName": "测试组件模块是否符合产品规范",
+    "sortNo": 3,
+    "Start": "2007-05-07T00:00:00",
+    "createTime": "2007-05-09T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "31"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "36"
+    }],
+    "pid": "35"
+},
+{
+    "id": "38",
+    "categoryName": "找出不符合产品规范的异常情况",
+    "sortNo": 4,
+    "Start": "2007-05-10T00:00:00",
+    "createTime": "2007-05-15T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "37"
+    }],
+    "pid": "35"
+},
+{
+    "id": "39",
+    "categoryName": "修改代码",
+    "sortNo": 4,
+    "Start": "2007-05-16T00:00:00",
+    "createTime": "2007-05-21T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "38"
+    }],
+    "pid": "35"
+},
+{
+    "id": "40",
+    "categoryName": "重新测试经过修改的代码",
+    "sortNo": 3,
+    "Start": "2007-05-22T00:00:00",
+    "createTime": "2007-05-24T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "39"
+    }],
+    "pid": "35"
+},
+{
+    "id": "41",
+    "categoryName": "完成单元测试",
+    "sortNo": 0,
+    "Start": "2007-05-25T00:00:00",
+    "createTime": "2007-05-25T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "40"
+    }],
+    "pid": "35"
+},
+{
+    "id": "42",
+    "categoryName": "整体测试",
+    "sortNo": 17,
+    "Start": "2007-05-28T00:00:00",
+    "createTime": "2007-06-19T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": "32"
+},
+{
+    "id": "43",
+    "categoryName": "测试模块集成情况",
+    "sortNo": 6,
+    "Start": "2007-05-28T00:00:00",
+    "createTime": "2007-06-04T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "41"
+    }],
+    "pid": "42"
+},
+{
+    "id": "44",
+    "categoryName": "找出不符合规范的异常情况",
+    "sortNo": 3,
+    "Start": "2007-06-05T00:00:00",
+    "createTime": "2007-06-07T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "43"
+    }],
+    "pid": "42"
+},
+{
+    "id": "45",
+    "categoryName": "修改代码",
+    "sortNo": 4,
+    "Start": "2007-06-08T00:00:00",
+    "createTime": "2007-06-13T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "44"
+    }],
+    "pid": "42"
+},
+{
+    "id": "46",
+    "categoryName": "重新测试经过修改的代码",
+    "sortNo": 3,
+    "Start": "2007-06-14T00:00:00",
+    "createTime": "2007-06-18T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "45"
+    }],
+    "pid": "42"
+},
+{
+    "id": "47",
+    "categoryName": "完成整体测试",
+    "sortNo": 0,
+    "Start": "2007-06-19T00:00:00",
+    "createTime": "2007-06-19T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "46"
+    }],
+    "pid": "42"
+},
+{
+    "id": "48",
+    "categoryName": "培训",
+    "sortNo": 64,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-06-06T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "49",
+    "categoryName": "制定针对最终用户的培训规范",
+    "sortNo": 3,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-13T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "48"
+},
+{
+    "id": "50",
+    "categoryName": "制定针对产品技术支持人员的培训规范",
+    "sortNo": 3,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-13T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "48"
+},
+{
+    "id": "51",
+    "categoryName": "确定培训方法(基于计算机的培训、教室授课等)",
+    "sortNo": 2,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-12T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "48"
+},
+{
+    "id": "52",
+    "categoryName": "编写培训材料",
+    "sortNo": 16,
+    "Start": "2007-04-27T00:00:00",
+    "createTime": "2007-05-18T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "49"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "31"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "50"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "51"
+    }],
+    "pid": "48"
+},
+{
+    "id": "53",
+    "categoryName": "研究培训材料的可用性",
+    "sortNo": 5,
+    "Start": "2007-05-21T00:00:00",
+    "createTime": "2007-05-25T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "52"
+    }],
+    "pid": "48"
+},
+{
+    "id": "54",
+    "categoryName": "对培训材料进行最后处理",
+    "sortNo": 4,
+    "Start": "2007-05-28T00:00:00",
+    "createTime": "2007-05-31T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "53"
+    }],
+    "pid": "48"
+},
+{
+    "id": "55",
+    "categoryName": "制定培训机制",
+    "sortNo": 3,
+    "Start": "2007-06-01T00:00:00",
+    "createTime": "2007-06-05T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "54"
+    }],
+    "pid": "48"
+},
+{
+    "id": "56",
+    "categoryName": "完成培训材料",
+    "sortNo": 0,
+    "Start": "2007-06-06T00:00:00",
+    "createTime": "2007-06-06T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "55"
+    }],
+    "pid": "48"
+},
+{
+    "id": "57",
+    "categoryName": "文档",
+    "sortNo": 42,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-05-07T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "58",
+    "categoryName": "制定“帮助”规范",
+    "sortNo": 1,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-09T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "57"
+},
+{
+    "id": "59",
+    "categoryName": "开发“帮助”系统",
+    "sortNo": 16,
+    "Start": "2007-04-04T00:00:00",
+    "createTime": "2007-04-25T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "58"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "29"
+    }],
+    "pid": "57"
+},
+{
+    "id": "60",
+    "categoryName": "审阅“帮助”文档",
+    "sortNo": 4,
+    "Start": "2007-04-26T00:00:00",
+    "createTime": "2007-05-01T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "59"
+    }],
+    "pid": "57"
+},
+{
+    "id": "61",
+    "categoryName": "根据反馈修改“帮助”文档",
+    "sortNo": 3,
+    "Start": "2007-05-02T00:00:00",
+    "createTime": "2007-05-04T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "60"
+    }],
+    "pid": "57"
+},
+{
+    "id": "62",
+    "categoryName": "制定用户手册规范",
+    "sortNo": 2,
+    "Start": "2007-03-09T00:00:00",
+    "createTime": "2007-03-12T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "24"
+    }],
+    "pid": "57"
+},
+{
+    "id": "63",
+    "categoryName": "编写用户手册",
+    "sortNo": 16,
+    "Start": "2007-04-04T00:00:00",
+    "createTime": "2007-04-25T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "62"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "29"
+    }],
+    "pid": "57"
+},
+{
+    "id": "64",
+    "categoryName": "审阅所有的用户文档",
+    "sortNo": 3,
+    "Start": "2007-04-26T00:00:00",
+    "createTime": "2007-04-30T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "63"
+    }],
+    "pid": "57"
+},
+{
+    "id": "65",
+    "categoryName": "根据反馈修改用户文档",
+    "sortNo": 3,
+    "Start": "2007-05-01T00:00:00",
+    "createTime": "2007-05-03T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "64"
+    }],
+    "pid": "57"
+},
+{
+    "id": "66",
+    "categoryName": "完成文档",
+    "sortNo": 0,
+    "Start": "2007-05-07T00:00:00",
+    "createTime": "2007-05-07T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "65"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "61"
+    }],
+    "pid": "57"
+},
+{
+    "id": "67",
+    "categoryName": "试生产",
+    "sortNo": 105,
+    "Start": "2007-02-08T00:00:00",
+    "createTime": "2007-07-04T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "68",
+    "categoryName": "确定测试群体",
+    "sortNo": 2,
+    "Start": "2007-02-08T00:00:00",
+    "createTime": "2007-02-09T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "16"
+    }],
+    "pid": "67"
+},
+{
+    "id": "69",
+    "categoryName": "确定软件分发机制",
+    "sortNo": 2,
+    "Start": "2007-02-12T00:00:00",
+    "createTime": "2007-02-13T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "68"
+    }],
+    "pid": "67"
+},
+{
+    "id": "70",
+    "categoryName": "安装/部署软件",
+    "sortNo": 2,
+    "Start": "2007-06-20T00:00:00",
+    "createTime": "2007-06-21T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "47"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "69"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "66"
+    },
+    {
+        "Type": 1,
+        "PredecessorUID": "56"
+    }],
+    "pid": "67"
+},
+{
+    "id": "71",
+    "categoryName": "获得用户反馈",
+    "sortNo": 6,
+    "Start": "2007-06-22T00:00:00",
+    "createTime": "2007-06-29T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "70"
+    }],
+    "pid": "67"
+},
+{
+    "id": "72",
+    "categoryName": "评估测试信息",
+    "sortNo": 2,
+    "Start": "2007-07-02T00:00:00",
+    "createTime": "2007-07-03T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "71"
+    }],
+    "pid": "67"
+},
+{
+    "id": "73",
+    "categoryName": "完成试生产工作",
+    "sortNo": 0,
+    "Start": "2007-07-04T00:00:00",
+    "createTime": "2007-07-04T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "72"
+    }],
+    "pid": "67"
+},
+{
+    "id": "74",
+    "categoryName": "部署",
+    "sortNo": 11,
+    "Start": "2007-07-05T00:00:00",
+    "createTime": "2007-07-19T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "75",
+    "categoryName": "确定最终部署策略",
+    "sortNo": 2,
+    "Start": "2007-07-05T00:00:00",
+    "createTime": "2007-07-06T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "73"
+    }],
+    "pid": "74"
+},
+{
+    "id": "76",
+    "categoryName": "确定部署方法",
+    "sortNo": 2,
+    "Start": "2007-07-09T00:00:00",
+    "createTime": "2007-07-10T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "75"
+    }],
+    "pid": "74"
+},
+{
+    "id": "77",
+    "categoryName": "获得部署所需资源",
+    "sortNo": 2,
+    "Start": "2007-07-11T00:00:00",
+    "createTime": "2007-07-12T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "76"
+    }],
+    "pid": "74"
+},
+{
+    "id": "78",
+    "categoryName": "培训技术支持人员",
+    "sortNo": 2,
+    "Start": "2007-07-13T00:00:00",
+    "createTime": "2007-07-16T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "77"
+    }],
+    "pid": "74"
+},
+{
+    "id": "79",
+    "categoryName": "部署软件",
+    "sortNo": 2,
+    "Start": "2007-07-17T00:00:00",
+    "createTime": "2007-07-18T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "78"
+    }],
+    "pid": "74"
+},
+{
+    "id": "80",
+    "categoryName": "完成部署工作",
+    "sortNo": 0,
+    "Start": "2007-07-19T00:00:00",
+    "createTime": "2007-07-19T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "79"
+    }],
+    "pid": "74"
+},
+{
+    "id": "81",
+    "categoryName": "实施工作结束后的回顾",
+    "sortNo": 7,
+    "Start": "2007-07-20T00:00:00",
+    "createTime": "2007-07-30T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 1,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [],
+    "pid": -1
+},
+{
+    "id": "82",
+    "categoryName": "将经验教训记录存档",
+    "sortNo": 2,
+    "Start": "2007-07-20T00:00:00",
+    "createTime": "2007-07-23T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "80"
+    }],
+    "pid": "81"
+},
+{
+    "id": "83",
+    "categoryName": "分发给工作组成员",
+    "sortNo": 2,
+    "Start": "2007-07-24T00:00:00",
+    "createTime": "2007-07-25T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "82"
+    }],
+    "pid": "81"
+},
+{
+    "id": "84",
+    "categoryName": "建立软件维护小组",
+    "sortNo": 2,
+    "Start": "2007-07-26T00:00:00",
+    "createTime": "2007-07-27T23:23:59",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 0,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "83"
+    }],
+    "pid": "81"
+},
+{
+    "id": "85",
+    "categoryName": "完成回顾",
+    "sortNo": 0,
+    "Start": "2007-07-30T00:00:00",
+    "createTime": "2007-07-30T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "84"
+    }],
+    "pid": "81"
+},
+{
+    "id": "86",
+    "categoryName": "软件开发模板结束",
+    "sortNo": 0,
+    "Start": "2007-07-31T00:00:00",
+    "createTime": "2007-07-31T00:00:00",
+    "PercentComplete": 0,
+    "Summary": 0,
+    "Critical": 0,
+    "Milestone": 1,
+    "PredecessorLink": [{
+        "Type": 1,
+        "PredecessorUID": "85"
+    }],
+    "pid": -1
+}]

@@ -1,0 +1,14 @@
+﻿[
+	{ id: "right", text: "单词管理"},
+	{ id: "rightList", pid: "right", text: "英语单词", iconCls: "Note", url: "modules/dictionary/list.html", iconPosition: "top" },
+
+	{ id: "category", text: "分类管理"},
+	{ id: "categoryList", pid: "category", text: "分类", iconCls: "Note", url: "modules/category/list.html", iconPosition: "top" },
+	
+	{ id: "user", text: "用户管理", iconCls: "icon-add"},
+	{ id: "addUser", pid: "user", text: "增加用户", iconCls: "icon-add", url: "../datagrid/celledit.html" },
+	{ id: "editUser", pid: "user", text: "修改用户", iconCls: "icon-edit", url: "../datagrid/rowedit.html" },
+	{ id: "removeUser", pid: "user", text: "删除用户", iconCls: "icon-remove", url: "../datagrid/datagrid.html" }
+		
+	
+]
